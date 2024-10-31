@@ -13,7 +13,9 @@ Este microservicio gestiona las entidades **Cuenta** y **Movimientos**. Proporci
 ## Configuración
 
 ### Base de Datos
-
+```markdown
+Se adjunta script para base de datos en (src/main/resources)
+```
 Este microservicio utiliza PostgreSQL. Configura las credenciales en el archivo `application.properties` o `application.yml`:
 
 ```properties
@@ -23,7 +25,7 @@ spring.datasource.password=134679
 spring.datasource.driver-class-name=org.postgresql.Driver
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
-
+```
 ### RabbitMQ
 Para habilitar la comunicación de eventos entre microservicios, configura RabbitMQ
 ```properties
